@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "STGoodsListViewController.h"
 
 @interface ViewController ()
 
@@ -22,6 +23,12 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)pushChoose:(id)sender {
+    STGoodsListViewController *vc = [[STGoodsListViewController alloc] initWithProductId:@"16053"];
+    [self presentViewController:vc animated:YES completion:^{
+        
+    }];
 }
 
 @end
